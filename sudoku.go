@@ -25,7 +25,7 @@ func SolveSudoku (input_grid [][]int) [][]int {
 	rowNums := make([]map[int]bool, BOARD_SIZE) // allocate the appropriate size array of maps
 	colNums := make([]map[int]bool, BOARD_SIZE)
 	subBoxNums := make([]map[int]bool, BOARD_SIZE)
-	
+
 	for i := 0; i < BOARD_SIZE; i++ {
         rowNums[i] = make(map[int]bool)
         colNums[i] = make(map[int]bool)
